@@ -19,7 +19,7 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-  background:linear-gradient(rgba(0,0,0,0.1),rgba(20, 20, 20, 0.4)),url(img/bg4.jpg);
+  background:linear-gradient(rgba(0,0,0,0.1),rgba(20, 20, 20, 0.4)),url(../img/bg4.jpg);
 background-size: cover;
 
 }
@@ -317,7 +317,7 @@ height: 300px;
     /* testimonial*/
 
 .testimonials{
-    background: url(img/bg2.jpg);
+    background: url(/img/bg2.jpg);
     background-size: cover;
 }
 .white .titletext,
@@ -379,7 +379,7 @@ font-weight: 300;
 
 
 .contact {
-    background: url(img/bg3.jpg);
+    background: url(../img/bg3.jpg);
     background-size: cover;
 }
 .contactform {
