@@ -317,7 +317,7 @@ height: 300px;
     /* testimonial*/
 
 .testimonials{
-    background: url(/img/bg2.jpg);
+    background: url(../img/bg2.jpg);
     background-size: cover;
 }
 .white .titletext,
