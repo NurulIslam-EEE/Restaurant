@@ -11,7 +11,7 @@
 </head>cvzx
 
 <body>
-    <header class="nav">
+    <header class="nav" id="menu">
         <a href="#" class="logo">Food <span>.</span></a>
         <div class="menutoggle" id="navLinks"> 
         
@@ -267,33 +267,21 @@
     function hideMenu(){
         navLinks.style.right="-200px";
     }
-    // window.addEventListener('scroll',function(){
-        // const header = document.querySelector('header');
-        // header.classList.toggle("sticky", window.scrolly > 0);
-    // });
     
-</script>
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script>
-    $(window).scroll(function(){
-        $('header').toggleClass('scrolled',$(this).scrolledTop()>50);
-    });
-</script>
-
-    <!-- <script> 
-        window.addEventListener('scroll', function () {
-            let header = document.querySelector('header');
-            let windowPosition = window.scrolly > 0;
-            header.classList.toggle('sticky', windowPosition);
-        });
-        function toggleMenu() {
-            const menutoggle = document.querySelector('.menutoggle');
-            const navigation = document.querySelector('.menutoggle');
-            menutoggle.classList.toggle('active');
-            navigation.classList.toggle('active')
+    window.addEventListener('scroll', function(){
+        let x =document.getElementById("menu");
+        if(window.pageYOffset > 550){
+            x.classList.add('sticky');
+        }else{
+            x.classList.remove('sticky');
         }
-    </script>-->
+    });
+
+    
+ </script>
+
+
+    
 
 </body>
 

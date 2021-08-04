@@ -28,18 +28,18 @@ max-width: 900px;
 text-align: center;
 }
 .banner .content h2{
-    color:black;
+    color:white;
     font-size: 2cm;
 }
 .banner .content p{
-    color:black;
+    color:white;
     padding: 1cm;
     font-size: 20px;
     font-weight: 600;
 }
 .btn{
 font-size: 1cm;
-color: black;
+color: white;
 background: #ff0157;
 display: inline-block;
 padding: 10px 30px;
@@ -54,6 +54,10 @@ transition: 0.5s;
     
 }
 
+
+/* --------------------Header----------- */
+
+
 header{
     top: 0;
     left: 0;
@@ -66,21 +70,13 @@ header{
     align-items: center;
     transition: 0.5s;
 }
-nav.scrolled{
-    background: #fff;
-    padding: 40px 100px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0,0.05);
-}
-
 header .logo{
-    color:black;
+    color:white;
     font-weight: 700;
     font-size: 1.1cm;
     text-decoration: none;
 }
-header .sticky .logo{
-    color: #111;
-}
+
 header .logo span{
 color:#ff0157
 }
@@ -99,15 +95,14 @@ color: #fff;
 font-weight: 300;
 
     }
-    header .navigation li a{
+header .navigation li a{
      
-      color:black;
+      color:white;
       font-weight: 600;
       text-decoration: none;
+     
     }
-header .sticky .navigation li a {
-    color: #111;
-}
+
   header .navigation li a:hover{
       color:#ff0157;
   }
@@ -118,7 +113,19 @@ header .sticky .navigation li a {
     
       
   }
-
+  .sticky{
+    background:white;
+    padding: 20px 100px;
+    box-shadow: 0 5px 10px rgba(253, 3, 3, 0.123);
+    position: fixed;
+    top:0;
+}
+ .sticky .navigation li a {
+    color: #111;
+}
+ .sticky .logo{
+    color: #111;
+}
   @media(max-width:700px){
     .banner .content h2{
     font-size: 40px;
